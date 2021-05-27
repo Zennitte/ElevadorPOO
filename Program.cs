@@ -65,8 +65,9 @@ namespace Elevador_Exercicio
 
                                 for (var i = 0; i < andarSubir; i++)
                                 {
-                                    Console.WriteLine(elevadorSoc.Subir());
+                                    elevadorSoc.Subir();
                                 }
+                                Console.WriteLine(elevadorSoc.Subir());
                                 break;
                             case "4":
                                 Console.WriteLine("Quantos andares você quer descer?");
@@ -74,8 +75,9 @@ namespace Elevador_Exercicio
 
                                 for (var i = 0; i < andarDescer; i++)
                                 {
-                                    Console.WriteLine(elevadorSoc.Descer());
+                                    elevadorSoc.Descer();
                                 }
+                                Console.WriteLine(elevadorSoc.Descer());
                                 break;
                             default:
                                 Console.WriteLine("Digite uma opção válida");
