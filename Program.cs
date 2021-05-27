@@ -66,7 +66,6 @@ namespace Elevador_Exercicio
                                 for (var i = 0; i < andarSubir; i++)
                                 {
                                     Console.WriteLine(elevadorSoc.Subir());
-
                                 }
                                 break;
                             case "4":
@@ -131,8 +130,9 @@ namespace Elevador_Exercicio
 
                                 for (var i = 0; i < andarSubir; i++)
                                 {
-                                    Console.WriteLine(elevadorSer.Subir());
+                                    elevadorSer.Subir();
                                 }
+                                Console.WriteLine(elevadorSer.Subir());
                                 break;
                             case "4":
                                 Console.WriteLine("Quantos andares você quer descer?");
@@ -140,8 +140,9 @@ namespace Elevador_Exercicio
 
                                 for (var i = 0; i < andarDescer; i++)
                                 {
-                                    Console.WriteLine(elevadorSer.Descer());
+                                    elevadorSer.Descer();
                                 }
+                                Console.WriteLine(elevadorSer.Descer());
                                 break;
                             case "5":
                                 Console.WriteLine("Quantas caixas você quer adicionar?");
@@ -164,9 +165,6 @@ namespace Elevador_Exercicio
                             default:
                                 break;
                         }
-
-
-
                     } while (elevadorSer.Pessoas > 0);
                     break;
                 default:
